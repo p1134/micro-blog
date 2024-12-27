@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Od obserwowanych{% endblock %}
+
+{% block bread %}
+    → Od obserwowanych
+{% endblock %}
+
+{% block body %}
+    {{ include('micro_post/_post_tabs.html.twig') }}
+    {{ include ('micro_post/_post_list.html.twig') }}
+{% endblock %}

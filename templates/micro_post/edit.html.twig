@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edytuj post{% endblock %}
+
+{% block bread %}
+→ <a href = "{{ path('app_micro_post_show', {post: post.id}) }}">Post</a> → Edytuj
+{% endblock %}
+
+{% block body %}
+    {{include ('micro_post/_form.html.twig')}}
+{% endblock %}

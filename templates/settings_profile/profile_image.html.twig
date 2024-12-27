@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Zdjęcie profilowe{% endblock %}
+
+{% block bread %}
+→ Ustawienia
+{% endblock %}
+
+{% block body %}
+
+    {{ include('settings_profile/_settings_profile_tabs.html.twig') }}
+
+    {{ form_start(form, {'attr': {'novalidate': 'novalidate'} }) }}
+    {{ form_label(form.profileImage) }}
+    {{ form_widget(form.profileImage) }}
+    {{ form_errors(form.profileImage) }}
+    {{ form_end(form) }}
+
+{% endblock %}
